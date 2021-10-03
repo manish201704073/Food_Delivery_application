@@ -1,0 +1,125 @@
+  /* css reset */
+  * {
+    margin: 0;
+    padding: 0; 
+}
+
+/* CSS variable */
+:root {
+    --navbar-height: 59px;
+}
+
+#navbar::before {
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+
+}
+
+/* Navigation bar */
+
+#navbar {
+    display: flex;
+    align-items: center;
+}
+
+/*  Navigation Bar:logo and image */
+#logo {
+    margin: 2px 14px;
+    height: 60px;
+}
+
+#logo img {
+    margin: 3px 3px;
+    height: 50px;
+    width: 50px;
+    border: 2px solid red;
+}
+
+/* Navigation Bar:list styling */
+#navbar {
+    position: relative;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'bree serif', serif;
+}
+
+#navbar ul li {
+
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    color: white;
+    display: block;
+    padding: 3px 15px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: #fff;
+}
+
+/* Home section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 2px 200px;
+    height: 400px;
+    justify-content: center;
+    align-items: center;
+}
+
+#home::before {
+    content: "";
+    background: url('bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'bree serif', serif;
+
+}
+
+#home p {
+
+    color: white;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'bree serif', serif;
+}
+
+/* utility classes */
+.h-primary {
+    font-size: 3.3rem;
+    padding: 12px;
+
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
